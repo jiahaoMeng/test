@@ -1,0 +1,20 @@
+/////////////////////单链表////////////////////
+struct ListNode{
+  int data;
+  ListNode *next;
+}; //create ListNode
+
+ListNode* list::Creat(){
+  ListNode *p,*s;
+  int x=0,y=1;
+  while(cin>>x){
+    s = new ListNode;
+    s->data=x;
+    if(head == NULL)
+      head=s;
+    else{
+      p->next=s;
+    }
+    p=s;
+  }
+}
